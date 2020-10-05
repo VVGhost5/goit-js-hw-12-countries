@@ -1,0 +1,22 @@
+<div class="country-block">
+    <h2 class="country-block__name">{{name}}</h2>
+    <div class="country-block__sections">
+        <div class="country-block__info-block">
+            <p class="country-block__capital">
+                <span class="country-block__points">Capital: </span>{{capital}}
+            </p>
+            <p class="country-block__population">
+                <span class="country-block__points">Population: </span>{{population}}
+            </p>
+            <p class="country-block__points">Languages</p>
+            <ul class="country-block__languages-list">
+                {{#each this.languages}}
+                <li class="country-block__languages-list-item">{{this.name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="country-block__flag-block">
+            <image class="country-block__image" width="200" height="100" src="{{flag}}" alt="{{name}}"></image>
+        </div>
+    </div>
+</div>
